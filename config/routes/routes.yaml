@@ -1,0 +1,14 @@
+api_upload_excel:
+    path: /api/upload-excel
+    controller: App\Controller\ExcelController::UploadExcel
+    methods: [GET, POST]
+
+
+
+
+angular_app:
+    path: /app/*
+    controller: AppBundle\Controller\AngularController::serveApp
+    requirements:
+        path: .*
+
